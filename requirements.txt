@@ -1,0 +1,9 @@
+pandas
+numpy
+nibabel
+matplotlib
+tensorflow
+scikit-learn
+xgboost
+lightgbm
+opencv-python
