@@ -100,14 +100,15 @@ def extract_smri_features(image_folder):
     # CNN
     print("Extracting features with custom CNN...")
     cnn_model = create_cnn_model()
-    extract_features(image_folder, cnn_model, preprocess_input_vgg, 'cnn-170.csv')
+    extract_features(image_folder, cnn_model, preprocess_input_vgg, 'cnn.csv')
 
     # ResNet
     print("\nExtracting features with ResNet50...")
     resnet_model = create_resnet_model()
-    extract_features(image_folder, resnet_model, preprocess_input_resnet, 'resnet170.csv')
+    extract_features(image_folder, resnet_model, preprocess_input_resnet, 'resnet.csv')
 
     # VGG16
     print("\nExtracting features with VGG16...")
     vgg_model = create_vgg_model()
-    extract_features(image_folder, vgg_model, preprocess_input_vgg, 'vgg170.csv')
+
+    extract_features(image_folder, vgg_model, preprocess_input_vgg, 'vgg.csv')
