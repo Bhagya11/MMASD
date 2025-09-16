@@ -49,7 +49,7 @@ The project is structured as a sequential pipeline:
     ```
 2.  Navigate to the project directory:
     ```bash
-    cd MMASD_Modular_Code
+    cd MMASD
     ```
 3.  Install the required packages:
     ```bash
@@ -129,5 +129,6 @@ You can also run individual modules if needed, but it is recommended to follow t
 -   **File**: `src/sitewise_cv.py`
 
 -   **Description**: This module implements a robust evaluation strategy called Leave-One-Site-Out Cross-Validation (LOSO-CV). It assesses how well the models generalize to new, unseen data acquisition sites by training on all sites except one and testing on the held-out site. This process is repeated for every site to provide a measure of real-world model performance.
+
 
 
